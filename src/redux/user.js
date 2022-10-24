@@ -14,7 +14,8 @@ export const userSlice = createSlice({
         //login메소드를 실행하였 을 때 작동 
     },
 });
-
-export default userSlice.reducer;
-
 // 생성된 Reducer의 값은 store.js에 import하여 관리
+
+export const { login } = userSlice.actions;
+// 위에 만들어둔 login 메소드를 action기능이 작동하도록 다른데서 씀
+export default userSlice.reducer;
